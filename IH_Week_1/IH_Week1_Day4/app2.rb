@@ -16,8 +16,8 @@ puts the_car.number_of_wheels
 
 
 
-wheels = [car.new, boat.new, motorcycle.new]
+# wheels = [car.new, boat.new, motorcycle.new]
 
-wheels.each do |wheels|
-	puts wheel.number_of_wheels
-end	
+# wheels.each do |wheels|
+# 	puts wheel.number_of_wheels
+# end	

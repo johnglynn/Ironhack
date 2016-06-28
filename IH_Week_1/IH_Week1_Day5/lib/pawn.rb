@@ -24,19 +24,19 @@ class Pawn
 	end			
 end
 
-    def determine_step_counter(to_x) # should argument be x? 
-        step = 0
-        if @step_counter > 1
-            if (@x - to_x).abs == 1
-                step = 1
-            elsif (@x - to_x).abs == 2
-                step = 2
-            end
-        else
-            step = 1
-        end
-        return step
-    end
+    # def determine_step_counter(to_x) # should argument be x? 
+    #     step = 0
+    #     if @step_counter > 1
+    #         if (@x - to_x).abs == 1
+    #             step = 1
+    #         elsif (@x - to_x).abs == 2
+    #             step = 2
+    #         end
+    #     else
+    #         step = 1
+    #     end
+    #     return step
+    # end
 
 
   # ********  NOTES  ********

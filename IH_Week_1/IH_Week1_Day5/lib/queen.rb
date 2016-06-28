@@ -36,3 +36,16 @@ end
       # [x - count, y]
       # [x, y + count]
       # [x, y - count] 
+
+
+#   ********  CLASS REVIEW  ********
+
+# create a module DiagonalMover
+# create a module StraightMover
+
+# inherit piece
+# include DiagonalMover
+# include StraightMover
+
+
+

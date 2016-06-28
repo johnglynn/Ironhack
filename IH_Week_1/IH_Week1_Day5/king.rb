@@ -28,3 +28,22 @@ end
  #                         Move.new( 0,  n), Move.new( 0, -n)
  #            end
  #          end
+
+
+   # ********  CLASS REVIEW ********
+
+   	# def can_move?(final_x, final_y)
+   	# 	change_x = (final_x - @x).abs
+   	# 	change_y = (final_y - @y).abs
+
+   	# 	if (change_x == 0 || change_x ==1) &&
+   	# 	   (change_x == 0 || change_x ==1)
+   	# 	   true
+   	# 	else
+   	# 		false
+   	# end		   
+
+
+
+
+

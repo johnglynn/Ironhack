@@ -1,0 +1,3 @@
+For use with IO.write
+
+IO.write has ability to create this file, so it is not necessary to have this file created for IO.write to work.

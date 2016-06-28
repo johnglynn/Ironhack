@@ -1,0 +1,16 @@
+.box{
+	height: 150px;
+	background: #654678;
+	padding-top: 50px;
+	margin-top: 25px;
+
+}
+
+.content{
+	height: 100px;
+	background: yellow;
+	width: 100%;
+	padding-top: 30px;
+	margin-right: 15px;
+	padding-right: 50px;
+}

@@ -1,0 +1,10 @@
+<h1>What movie was made in what year?</h1>
+
+<ul>
+	<% @display_posters.each do |movie| %>
+
+	<li> <img src="<%= movie.poster %>" style = "height:100px" style = "width:100px"> </li>
+
+	<% end %>
+
+</ul>

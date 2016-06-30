@@ -90,18 +90,31 @@ header{
 
 }
 
+#nav_center ul{
+	text-decoration: none;
+	list-style: none;
+	padding-top: 2%;
+}
+
 #nav_center ul li{
 	float: left;
+	width: 33%;
+	
 }
 
 #nav_center ul li a{
-	text-decoration: none;
+	text-align: left;
+	color: white;
+	padding: 4%;
 }
 
 #nav_right{
 	width: 20%;
 	float: right;
+}
 
+#nav_right a{
+	text-align: right;
 }
 
 #main_right{

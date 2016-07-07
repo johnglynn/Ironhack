@@ -4,7 +4,7 @@
 <ul>
   <% @projects.each do |the_project| %>
     <li>
-    	<a href="/projects/<% the_project.id %>">	
+    	<a href="/projects/<%= the_project.id %>">	
      	 <%= the_project.name %>
      	</a>
 

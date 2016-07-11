@@ -1,0 +1,44 @@
+<html>
+
+<h2> List of Concerts </h2>
+
+<p class="all">
+  <% @concerts.each do |the_concert| %>
+
+    <br>
+       <a href="/concerts/<%= the_concert.id %>">
+       <%= the_concert.artist %>
+       </a>
+    <br> 
+       <%= the_concert.venu %>
+    <br>
+       <%= the_concert.city %>
+    <br> 
+       <%= the_concert.date %>
+    <br> 
+       <%= the_concert.price %>
+    <br> 
+       <%= the_concert.description %>
+    <br> 
+    
+  <% end %>
+
+</p>
+
+<p class="daily">
+  <% @dailys.each do |the_dailys| %>
+
+    <%= the_dailys.artist %>
+
+    <br>
+
+    <%= the_dailys.venu %>
+
+  <% end %>
+
+</p>
+
+
+
+
+</html>

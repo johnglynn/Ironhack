@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-
+##
 	get '/', to: 'site#home'
 
 	get '/say_name/:the_name', to: 'site#display_name'

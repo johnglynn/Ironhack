@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MusicConcertNetwork</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  	<header>
+  		<h1>Ticket Master</h1>
+  	</header>
+    <%= yield %>
+    <footer>
+    	<h6>1-800-BUY-TKTS</h6>
+    </footer>
+  </body>
+</html>

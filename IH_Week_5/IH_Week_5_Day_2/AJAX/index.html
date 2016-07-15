@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  </head>
+
+  <body>
+
+  	<div class="container">
+
+  		<script type="text/javascript">
+  			$(document).ready(function() {
+
+  			
+  			
+
+  			function fetchCharacters(){
+  				var httpRequest = new XMLHttpRequest();
+
+  				httpRequest.onreadystatechange = handleResponse;
+  				httpRequest.open("GET", "https://ironhack-characters.herokuapp.com/characters");
+  				httpRequest.send();
+
+  			}
+
+  			function handleResponse(event){
+  				// console.log(event);
+  				var httpRequest = event.currentTarget;
+  				if (httpRequest.readyState === 4) {
+  					if (httpRequest.status === 200) {
+  						console.log('---without jQuery ---');
+  						showCharacters(JSON.parse(httpRequest.responseText));
+  					}
+  					else{
+  						alert("There was an error")
+  					}
+  				}
+
+  			}
+
+  			function showCharacters (charactersArray) {
+  				charactersArray.forEach(function (theCharacter){
+  					// console.log(theCharacter);
+  					var html = `<p> ${theCharacter.name} - 
+  					<strong> ${theCharacter.weapon} </strong> -
+  					<em> ${theCharacter.occupation} </em>
+  					</p>
+  					;
+  				});
+  			}
+
+  			fetchCharacters();
+
+  			});
+
+  		</script>
+
+
+  	</div>
+
+  </body>
+
+
+
+  </html>

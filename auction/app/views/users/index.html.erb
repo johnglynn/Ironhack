@@ -1,0 +1,10 @@
+<h2>users#index</h2>
+
+<% @users.each do |x| %>
+
+    <%= link_to "#{x.id}. #{x.name}", user_path(x.id) %>
+    <br><%= x.email %>       
+    <p><%= button_to "Delete", user_path(x.id), method: :delete, data: {confirm: "Are you sure you want to delete this user?"}%></p>
+    <p>* * *</p>
+
+<% end %>

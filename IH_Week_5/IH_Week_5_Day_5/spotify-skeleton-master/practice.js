@@ -75,7 +75,13 @@ $('btn-play').on('click', function(){
     success: showInfo,
     error: handleError
   });
-  $('.js_song_input').val("");
+
+
+  $('.btn').onclick(('.calories').val,() ;
+
+
+
+
 }
 function showInfo(songResponse){
   $(".js-artist-list").empty();

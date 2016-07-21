@@ -1,0 +1,12 @@
+<h2><%= @this_user.name %></h2>
+<h3>Add a new product</h3>
+
+<%= form_for Product.new, url: {action: "create"} do |f| %>
+    
+    Title: <%= f.text_field :title %>
+    Description : <%= f.text_field :description %>
+    Deadline : <%= f.date_field :deadline %>
+
+    <%= f.submit %>
+<% end %>
+

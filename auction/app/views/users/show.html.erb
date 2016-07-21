@@ -1,0 +1,10 @@
+<strong><%= @this_user.id %></strong>
+<br><%= @this_user.name %>
+<br><%= @this_user.email %>
+<ul>
+    <% @this_user.products.each do |x| %>
+        <li><%= x.title %></li>
+    <% end %>
+</ul>
+
+

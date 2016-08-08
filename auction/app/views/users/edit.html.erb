@@ -1,0 +1,13 @@
+<h2>users#edit</h2>
+
+<h3>Edit <%= @this_user.name %></h3>
+
+<%= form_for @this_user, url: {action: "update"} do |f| %>
+    
+    Name: <%= f.text_field :name %>
+    Email : <%= f.text_field :email %>
+
+    <%= f.submit %>
+<% end %>
+
+

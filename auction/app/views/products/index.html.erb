@@ -6,7 +6,7 @@
     <br><%= x.description %>
     <br>User ID: <%= x.user_id %>
     <br>Created at:<%= x.created_at.to_formatted_s(:short) %>
-<br>Deadline: <%= x.deadline %>
+<br>Deadline: <%= x.deadline_calc.to_formatted_s(:short) %>
     
 <p><%= button_to "Delete", user_product_path(x.user_id, x.id), method: :delete, data: {confirm: "Are you sure you want to delete this product?"}%></p>
 
